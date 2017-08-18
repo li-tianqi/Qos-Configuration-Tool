@@ -172,12 +172,12 @@ Building the following QoS structure:
                 /*********************** ADD PART BY LITIANQI ******************************************/
 		int pir[n];
 		{
-			//read pir.csv file
+			//read sh_pir.csv file
 			FILE *fp;
 			char temp_pir[n][20];
 
 			//read csvfile line by line
-			fp = fopen("pir.csv", "r");
+			fp = fopen("sh_pir.csv", "r");
 			for(int i = 0; i < n; i++) {
 				fgets(temp_pir[i], 20, fp);
 			}
