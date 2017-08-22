@@ -5,7 +5,7 @@
 
 #### 说明：
 1. 测试方法：  
-	- clone [https://github.com/li-tianqi/Qos-Configuration-Tool.git](https://github.com/li-tianqi/Qos-Configuration-Tool.git)，切换到分支'back-end'
+	- clone [https://github.com/li-tianqi/Qos-Configuration-Tool.git](https://github.com/li-tianqi/Qos-Configuration-Tool.git)，切换到分支`back-end`
 	- 或到[https://github.com/li-tianqi/Qos-Configuration-Tool/tree/back-end](https://github.com/li-tianqi/Qos-Configuration-Tool/tree/back-end)下载zip解压
 	- 找到根目录下的`run_test.py`, 执行`./run_test.py`或`python3 run_test.py`
 2. 操作方法：根据界面提示输入相应选项并回车
