@@ -62,9 +62,11 @@ int main(int argc, char* argv[]){
 	// test
 	while(1){
 		int key;
-		printf("input shaper id (0-3999):");
+		//printf("%s\n", sh_pir_csv_path);
+		printf("输入shaper id (0-3999)，查看对应pir值(ctrl+c退出):            \n");
 		scanf("%d",&key);
-		printf("0x%x\n", pir[key]);
+		if(key >= 0 && key <= 3999)
+			printf("0x%x\n", pir[key]);
 		//printf("%d\n", key);
 		
 		

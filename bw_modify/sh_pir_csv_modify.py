@@ -7,10 +7,10 @@
 
 import os
 import csv
-from bw_to_pir import bw_to_pir
-from csv_to_dict import csv_to_dict
+from .bw_to_pir import bw_to_pir
+from .csv_to_dict import csv_to_dict
 import shutil
-from get_path import get_path
+from .get_path import get_path
 
 
 N = 4000    # 修改这个值后要将csv文件删除，否则文件行数不会更新

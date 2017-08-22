@@ -1,5 +1,66 @@
 # 后台功能实现
 
+### 新增功能测试模块(run_test.py)
+- 在控制台实现简单界面效果，方便测试  
+
+#### 说明：
+1. 测试方法：  
+	- clone https://github.com/li-tianqi/Qos-Configuration-Tool.git，切换到分支'back-end'
+	- 或到[https://github.com/li-tianqi/Qos-Configuration-Tool/tree/back-end]https://github.com/li-tianqi/Qos-Configuration-Tool/tree/back-end下载zip解压
+	- 找到根目录下的'run_test.py', 执行'./run_test.py'或'python3 run_test.py'
+2. 操作方法：根据界面提示输入相应选项并回车
+3. 所有命令选项不区分大小写
+
+
+#### 包括的功能
+1. 首页
+	- 展示已保存的策略
+	- 提供到选择策略的界面跳转
+	- 提供到新增策略的界面跳转
+	- 提供退出功能
+	- 显示如下
+![](images/home.png)
+2. 选择策略
+	- 列出可选择的策略和对应序号
+	- 根据序号选择对应策略,跳转到操作界面
+	- 提供返回首页的跳转
+	- 提供退出选项
+	- 显示如下
+![](images/choose.png)
+3. 策略操作
+	- 显示选中的策略
+	- 提供部署策略选项
+	- 提供修改策略选项
+	- 拟增加删除策略选项
+	- 提供返回上页选项
+	- 提供返回首页选项
+	- 提供退出选项
+	- 显示如下
+![](images/operate.png)
+4. 策略部署
+	- 显示部署成功的策略
+	- 提供查看对应id的pir值的选项（不是带宽值）
+	- 提供到选择策略界面的跳转
+	- 提供返回上页选项
+	- 提供返回首页选项
+	- 提供退出选项
+	- 显示如下
+![](images/deploy.png)
+5. 修改策略
+	- 显示选中的策略
+	- 提供修改策略向导
+	- 显示如下
+![](images/modify.png)
+6. 新增策略
+	- 提供从头新建策略的选项
+	- 提供基于已有策略创建策略的选项
+	- 分别提供对应的向导
+	- 提供返回首页选项
+	- 提供退出选项
+![](images/new.png)
+
+
+
 ### 功能
 1. 修改带宽功能
 	- 4000个shaper带宽

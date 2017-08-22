@@ -8,7 +8,7 @@
 """
 
 import os
-from get_path import get_path
+from .get_path import get_path
 
 def generate_policy(policy_name = None):
     """
