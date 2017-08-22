@@ -10,17 +10,18 @@ import csv
 from bw_to_pir import bw_to_pir
 from csv_to_dict import csv_to_dict
 import shutil
+from get_path import get_path
 
 
 N = 4000    # 修改这个值后要将csv文件删除，否则文件行数不会更新
-path = os.path.realpath(__file__)    # 本文件绝对路径
+#path = os.path.realpath(__file__)    # 本文件绝对路径
 
 #father_path = os.path.abspath(os.path.dirname(path)+os.path.sep+".")
-grader_father = os.path.abspath(os.path.dirname(path)+os.path.sep+"..")    # 上两级目录
+#grader_father = os.path.abspath(os.path.dirname(path)+os.path.sep+"..")    # 上两级目录
 #sh_pir = "../data/sh_pir.csv"
-sh_pir = grader_father + "/data/sh_pir.csv"    # sh_pir.csv绝对路径
+sh_pir = get_path(3) + "/data/sh_pir.csv"    # sh_pir.csv绝对路径
 
-temp_csv = grader_father + "/data/temp/temp.csv"    # 临时文件绝对路径
+temp_csv = get_path(3) + "/data/temp/temp.csv"    # 临时文件绝对路径
 
 def pir_csv_modify(def_bw = None, spec_bw = None, bw_csv = None, ref_csv = sh_pir):
     """

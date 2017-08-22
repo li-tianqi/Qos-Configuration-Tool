@@ -8,6 +8,7 @@
 """
 
 import os
+from get_path import get_path
 
 def generate_policy(policy_name = None):
     """
@@ -19,11 +20,11 @@ def generate_policy(policy_name = None):
         policy file and corresponding csv file
     """
 	
-    path = os.path.realpath(__file__)    # 本文件绝对路径
+    #path = os.path.realpath(__file__)    # 本文件绝对路径
 
     #father_path = os.path.abspath(os.path.dirname(path)+os.path.sep+".")
-    grader_father = os.path.abspath(os.path.dirname(path)+os.path.sep+"..")    # 上两级目录
-    make_sh_path = grader_father + "/script/make.sh"    # make.sh绝对路径
+    #grader_father = os.path.abspath(os.path.dirname(path)+os.path.sep+"..")    # 上两级目录
+    make_sh_path = get_path(3) + "/script/make.sh"    # make.sh绝对路径
 
 
 

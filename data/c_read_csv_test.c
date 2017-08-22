@@ -9,13 +9,15 @@
 int main(int argc, char* argv[]){
 	
 	int n = 4000;	
+	//int i;
 	
 	//int k = 0x00c8;
 	
 	char sh_pir_csv_path[1024];  // pir csv file path
 	
 	{
-		int count = readlink("/proc/self/exe", sh_pir_csv_path, 1024);  // get this file's path
+		int count;
+		count = readlink("/proc/self/exe", sh_pir_csv_path, 1024);  // get this file's path
 		
 		// remove this file's name
 		for(int i=strlen(sh_pir_csv_path); i>0; i--)

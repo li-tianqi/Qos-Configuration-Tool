@@ -22,7 +22,7 @@ if [ ! -x "$destination_path" ]; then
     mkdir "$destination_path"  
 fi
 
-gcc $source_file -o $destination_file
+gcc $source_file -std=c99 -o $destination_file
 
 echo "obtain new file:"
 echo "$destination_file"
