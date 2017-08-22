@@ -1,13 +1,13 @@
 # 后台功能实现
 
-### 新增功能测试模块(run_test.py)
+### 新增功能测试模块(`run_test.py`)
 - 在控制台实现简单界面效果，方便测试  
 
 #### 说明：
 1. 测试方法：  
 	- clone [https://github.com/li-tianqi/Qos-Configuration-Tool.git](https://github.com/li-tianqi/Qos-Configuration-Tool.git)，切换到分支'back-end'
 	- 或到[https://github.com/li-tianqi/Qos-Configuration-Tool/tree/back-end](https://github.com/li-tianqi/Qos-Configuration-Tool/tree/back-end)下载zip解压
-	- 找到根目录下的'run_test.py', 执行'./run_test.py'或'python3 run_test.py'
+	- 找到根目录下的`run_test.py`, 执行`./run_test.py`或`python3 run_test.py`
 2. 操作方法：根据界面提示输入相应选项并回车
 3. 所有命令选项不区分大小写
 
