@@ -43,6 +43,7 @@ def page_home():
             #print("new_page")
             break
         elif key == 'q' or key == 'Q':
+            os.system('clear')
             break
         else:
             print("选择错误!  ")
@@ -77,6 +78,7 @@ def page_choose():
             page_home()
             break
         elif key == 'q' or key == 'Q':
+            os.system('clear')
             break
         elif int(key) > 0 and int(key) <= len(qos_list):
             page_operate(key, qos_list)
@@ -113,6 +115,7 @@ def page_operate(key, qos_list):
             page_home()
             break
         elif key1 == 'q' or key1 == 'Q':
+            os.system('clear')
             break
         elif key1 == 'd' or key1 == 'D':
             page_deploy(key, qos_list)
@@ -176,6 +179,7 @@ def page_modify(key, qos_list):
             page_home()
             break
         elif key == 'q' or key == 'Q':
+            os.system('clear')
             break
         else:
             print("选择错误！  ")
@@ -212,6 +216,7 @@ def page_deploy(key, qos_list):
             page_home()
             break
         elif key1 == 'q' or key1 == 'Q':
+            os.system('clear')
             break
         elif key1 == 'c' or key1 == 'C':
             page_choose()
@@ -265,6 +270,7 @@ def page_new():
             page_home()
             break
         elif key == 'q' or 'Q':
+            os.system('clear')
             break
         else:
             print("选择错误！  ")
@@ -329,6 +335,7 @@ def new_from_blank():
             page_home()
             break
         elif key == 'q' or key == 'Q':
+            os.system('clear')
             break
         else:
             print("选择错误！  ")
@@ -359,6 +366,7 @@ def new_from_old():
             page_home()
             break
         elif key == 'q' or key == 'Q':
+            os.system('clear')
             break
         elif int(key) > 0 and int(key) <= len(qos_list):
             pir_file = get_path(3) + "/qos_policy/" + qos_list[int(key) - 1] + "/sh_pir.csv"
@@ -405,6 +413,7 @@ def new_from_old():
             page_home()
             break
         elif key == 'q' or key == 'Q':
+            os.system('clear')
             break
         else:
             print("选择错误！  ")
